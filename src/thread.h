@@ -20,6 +20,12 @@
 
 #ifndef THREAD_H
 #define THREAD_H
+#ifdef THREAD_EXIT
+#  undef THREAD_EXIT
+#endif
+#ifdef THREAD_RESUME
+#  undef THREAD_RESUME
+#endif
 
 #include <stdatomic.h>
 #ifndef _WIN32
